@@ -1,0 +1,5 @@
+graph forest_graph{
+ rankdir=BT 
+"a" label="no child"
+"b" -- "c" label="has child"
+}

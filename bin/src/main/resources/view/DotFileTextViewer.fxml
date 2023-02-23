@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<ScrollPane prefHeight="567.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DotFileTextViewerController">
+   <content>
+      <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="492.0">
+         <children>
+            <TextArea fx:id="dotFileTextArea" layoutX="14.0" layoutY="14.0" prefHeight="533.0" prefWidth="463.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

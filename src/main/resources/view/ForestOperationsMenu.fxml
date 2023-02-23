@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ForestOperationsMenuController">
+   <children>
+      <Button fx:id="bottomOperationButton" layoutX="260.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleBottomOperationButtonAction" prefHeight="29.0" prefWidth="121.0" text="F bottom" />
+      <Button fx:id="sumOperationButton" layoutX="260.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleSumOperationButtonAction" prefHeight="29.0" prefWidth="121.0" text="F+G" />
+      <Button fx:id="sumBottomOperationButton" layoutX="260.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleSumBottomOperationButtonAction" prefHeight="29.0" prefWidth="121.0" text="(F+G) bottom" />
+      <Button fx:id="multiplicationOperationButton" layoutX="260.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleMultiplicationOperationButtonAction" prefHeight="29.0" prefWidth="121.0" text="F x G" />
+      <Label layoutX="188.0" layoutY="45.0" prefHeight="29.0" prefWidth="287.0" text="Select which operation is going to be executed">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="bottomlessOperationButton" layoutX="260.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleBottomLessOperationButtonAction" prefHeight="29.0" prefWidth="121.0" text="F bottomless" />
+   </children>
+</AnchorPane>

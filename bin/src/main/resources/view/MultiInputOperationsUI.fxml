@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane prefHeight="603.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MultiInputOperationsUIController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="901.0">
+         <children>
+            <AnchorPane layoutX="33.0" layoutY="90.0" prefHeight="429.0" prefWidth="303.0">
+               <children>
+                  <ImageView fx:id="inputForestFImageView" fitHeight="378.0" fitWidth="284.0" layoutX="8.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="inputForestFLabel" prefHeight="28.0" prefWidth="227.0" text="Input forest F:" visible="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="564.0" layoutY="90.0" prefHeight="429.0" prefWidth="303.0">
+               <children>
+                  <ImageView fx:id="inputForestGImageView" fitHeight="378.0" fitWidth="284.0" layoutX="8.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="inputForestGLabel" prefHeight="28.0" prefWidth="227.0" text="Input forest G:" visible="false" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="generateInputForestFButton" layoutX="122.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleGenerateInputForestFButtonAction" text="Generate Input Forest F" />
+            <Button fx:id="generateInputForestGButton" layoutX="644.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleGenerateInputForestGButtonAction" text="Generate Input Forest G" />
+            <Label fx:id="errorLabel" layoutX="374.0" layoutY="480.0" prefHeight="25.0" prefWidth="138.0" />
+            <Button fx:id="generateDownsetButton" layoutX="387.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleGenerateDownsetButtonAction" prefHeight="25.0" prefWidth="113.0" text="D(F),D(G)" />
+            <Button fx:id="generateProductButton" layoutX="387.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleGenerateProductButtonAction" prefHeight="25.0" prefWidth="112.0" text="FxG" />
+            <Button fx:id="generateSumButton" layoutX="387.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleGenerateSumButtonAction" prefHeight="25.0" prefWidth="112.0" text="F+G" />
+            <Button fx:id="generateProductDownsetButton" layoutX="387.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleGenerateProductDownsetButtonAction" prefHeight="25.0" prefWidth="112.0" text="Downset(FxG)" />
+            <Button fx:id="generateSumDownsetButton" layoutX="387.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleGenerateSumDownsetButtonAction" prefHeight="25.0" prefWidth="112.0" text="Downset(F+G)" />
+            <Button fx:id="generateCartesianProductButton" layoutX="387.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleGenerateCartesianProductButtonAction" prefHeight="25.0" prefWidth="112.0" text="D(F)xD(G)" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

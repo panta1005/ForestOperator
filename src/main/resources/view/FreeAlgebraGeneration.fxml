@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="259.0" prefWidth="484.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="view.FreeAlgebraGenerationController">
+   <children>
+      <TextField fx:id="VariableNumberTextField" layoutX="164.0" layoutY="87.0" />
+      <Label layoutX="102.0" layoutY="50.0" text="Select the number of variables (N) to be considered:" />
+      <Label fx:id="InformationLabel" layoutX="35.0" layoutY="149.0" text="Note: for N&gt;4, the program may take a while to compute the resulting forest" />
+      <Label fx:id="ErrorLabel" layoutX="102.0" layoutY="121.0" prefHeight="17.0" prefWidth="255.0" textFill="#180000" />
+      <Button fx:id="GenerateAlgebraButton" layoutX="210.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleGenerateAlgebraButtonAction" text="Generate" />
+   </children>
+</AnchorPane>

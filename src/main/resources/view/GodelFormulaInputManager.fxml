@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GodelFormulaInputManagerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cbd3da" height="261.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Label fx:id="legendLabel" layoutX="21.0" layoutY="14.0" prefHeight="261.0" prefWidth="320.0" text="Characters Legend for the formula:&#10;Alphabet: &#10;Symbols:&#10;AND: ^&#10;OR: v&#10;IMPLICATION: -&#10;NEGATION: !&#10;PARENTHESIS: ( )&#10;The use of parenthesis is advised when writing &#10;expressions for the correct parsing of the formula&#10;(white spaces can be used to better visualize the formula,&#10;if needed)&#10;ex. (XvY)-!Z ; ( X ^ Y ) - !Z" />
+      <TextField fx:id="formulaTextField" layoutX="122.0" layoutY="332.0" prefHeight="25.0" prefWidth="396.0" />
+      <Button fx:id="evaluateFormulaButton" layoutX="226.0" layoutY="417.0" mnemonicParsing="false" onAction="#handleEvaluateFormulaButtonAction" text="Generate graphic representation" />
+      <Label fx:id="errorMessageLabel" layoutX="14.0" layoutY="371.0" prefHeight="25.0" prefWidth="619.0" textFill="#24d710" />
+   </children>
+</AnchorPane>

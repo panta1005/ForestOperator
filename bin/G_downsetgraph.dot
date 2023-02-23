@@ -1,0 +1,4 @@
+graph downset_graph{ rankdir=BT
+"{}" -- "{c}"
+"{c}" -- "{c,d}"
+}
