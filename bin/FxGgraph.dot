@@ -1,8 +1,0 @@
-graph forest_graph{
- rankdir=BT 
-"(a,d)" -- "(b,d)"
-"(b,c)" -- "(b,d)2"
-"(a,c)" -- "(b,d)1"
-"(a,c)" -- "(a,d)"
-"(a,c)" -- "(b,c)"
-}
