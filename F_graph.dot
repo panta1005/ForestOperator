@@ -1,6 +1,0 @@
-graph forest_graph{ rankdir=BT
-a -- b
-a1 -- b1
-r -- a1
-r -- a
-}
